@@ -1,5 +1,11 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    >
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
@@ -13,27 +19,35 @@
         >
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:scaleType="centerInside"
             android:layout_height="100dp"
+            android:background="@android:color/white"
             android:src="@drawable/cavs"
-            android:layout_marginTop="10dp"
+
             />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/architects_daughter"
+            android:textSize="15sp"
+            android:background="@android:color/black"
             android:gravity="center"
             android:padding="4dp"
             android:text="CAVELIERS"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:fontFamily="casual"
-            />
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/team_a_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/md_cyan_800"
+            android:textSize="32sp"
+            android:textColor="@color/md_black_1000"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:padding="4dp"
             android:text="0" />
@@ -44,7 +58,10 @@
             android:layout_margin="8dp"
             android:onClick="addThreeForTeamA"
             android:text="+3 Points"
-            android:background="@color/md_pink_100"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="@color/md_white_1000"
+            android:background="@color/md_red_500"
             />
 
         <Button
@@ -53,7 +70,10 @@
             android:layout_margin="8dp"
             android:onClick="addTwoForTeamA"
             android:text="+2 Points"
-            android:background="@color/md_pink_100"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="@color/md_black_1000"
+            android:background="@color/md_yellow_A400"
             />
 
         <Button
@@ -62,7 +82,10 @@
             android:layout_margin="8dp"
             android:onClick="addOneForTeamA"
             android:text="Free throw"
-            android:background="@color/md_pink_100"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="@color/md_black_1000"
+            android:background="@color/md_light_green_800"
             />
     </LinearLayout>
 
@@ -74,10 +97,10 @@
         >
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="100dp"
+            android:background="@android:color/white"
             android:src="@drawable/goldenstate"
-            android:layout_marginTop="10dp"
             />
 
         <TextView
@@ -86,14 +109,21 @@
             android:gravity="center"
             android:padding="4dp"
             android:text="GOLDEN STATE"
+            android:background="@android:color/black"
             android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:fontFamily="casual" />
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/architects_daughter"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/team_b_score"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:textColor="@color/md_black_1000"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/md_cyan_800"
             android:gravity="center"
             android:padding="4dp"
             android:text="0" />
@@ -104,7 +134,10 @@
             android:layout_margin="8dp"
             android:onClick="addThreeForTeamB"
             android:text="+3 Points"
-            android:background="@color/md_indigo_200"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="@color/md_white_1000"
+            android:background="@color/md_red_500"
             />
 
         <Button
@@ -113,7 +146,10 @@
             android:layout_margin="8dp"
             android:onClick="addTwoForTeamB"
             android:text="+2 Points"
-            android:background="@color/md_indigo_200"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="@color/md_black_1000"
+            android:background="@color/md_yellow_A400"
             />
 
         <Button
@@ -122,8 +158,28 @@
             android:layout_margin="8dp"
             android:onClick="addOneForTeamB"
             android:text="Free throw"
-            android:background="@color/md_indigo_200"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:textColor="@color/md_black_1000"
+            android:background="@color/md_light_green_800"
             />
     </LinearLayout>
 
+
 </LinearLayout>
+
+<Button
+    android:layout_width="100dp"
+    android:layout_height="30dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:background="@color/md_white_1000"
+    android:textStyle="bold"
+    android:textSize="20sp"
+    android:layout_marginBottom="10dp"
+    android:fontFamily="@font/aclonica"
+    android:textColor="@color/md_black_1000"
+    android:text="RESET"
+    />
+
+</RelativeLayout>
